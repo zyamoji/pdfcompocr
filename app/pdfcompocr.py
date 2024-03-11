@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import subprocess
 import argparse
+import sys
 
 # 引数処理
 parser = argparse.ArgumentParser()
@@ -26,6 +27,11 @@ def ocr(filename):
   print(ret.stdout)
   print(ret.stderr)
   print(command)
+
+# ファイル名が一つもなければ終わる
+if len(args.filenames) == 0:
+  print("Please input filename")
+  sys.exit()
 
 # メイン処理、ファイルは複数渡せるようにする
 for file in args.filenames:
