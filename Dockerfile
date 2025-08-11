@@ -1,4 +1,4 @@
-FROM python:3.9-slim-buster
+FROM python:3.9-slim-bookworm
 LABEL org.opencontainers.image.authors="uniquequeue@gmail.com"
 
 ENV LANG ja_JP.UTF-8
