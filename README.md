@@ -9,6 +9,12 @@ app directory is needed.
 app directory include pdfcompocr.py.
 
 # Usage
+
+add permission
+```bash
+$ sudo chmod +x pdfcompocr.py
+```
+
 on bash
 ```bash
 $ sudo docker run -it --rm --name pdfcompocr -v ${pwd}app/:/app pdfcompocr:0.0.1 ./pdfcompocr.py --compress --ocr pdfname
